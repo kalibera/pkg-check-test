@@ -52,7 +52,7 @@ Simon Urbanek
   \code{\link{readTIFF}}
 }
 \examples{
-img <- readTIFF(system.file("img", "Rlogo.tiff", package="tiff"))
+img <- readTIFF(system.file("img", "Rlogo.tiff", package="testme"))
 # write without the alpha channel
 tiff <- writeTIFF(img[,,-4], raw(0))
 # read as native

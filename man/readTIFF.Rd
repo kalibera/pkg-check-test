@@ -98,7 +98,7 @@ direct acccess as it is intended mainly for viewing and not computation.
 \code{\link{rasterImage}}, \code{\link{writeTIFF}}
 }
 \examples{
-Rlogo <- system.file("img", "Rlogo.tiff", package="tiff")
+Rlogo <- system.file("img", "Rlogo.tiff", package="testme")
 
 # read a sample file (R logo)
 img <- readTIFF(Rlogo)
