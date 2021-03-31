@@ -1,0 +1,13 @@
+Package: testme
+Version: 0.1-8
+Title: Test for R-Actions
+Author: Simon Urbanek <Simon.Urbanek@r-project.org> [aut, cre],
+	Kent Johnson <kjohnson@akoyabio.com> [ctb]
+Maintainer: Simon Urbanek <Simon.Urbanek@r-project.org>
+Depends: R (>= 2.9.0)
+Imports: png
+Suggests: jpeg
+Description: Structure to test GitHub Actions for package checking. This is originally based on the tiff package with added dependencies to test the functionality.
+License: GPL-2 | GPL-3
+SystemRequirements: tiff and jpeg libraries
+URL: https://www.rforge.net/tiff/

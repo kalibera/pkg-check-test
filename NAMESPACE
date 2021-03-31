@@ -1,0 +1,2 @@
+useDynLib(testme, read_tiff, write_tiff)
+exportPattern(".*TIFF")
