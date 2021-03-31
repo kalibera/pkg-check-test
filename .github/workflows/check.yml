@@ -6,7 +6,7 @@ jobs:
   R-CMD-check:
     runs-on: ${{ matrix.os }}
 
-    name: ${{ matrix.os }} (${{ matrix.r }})
+    name: ${{ matrix.os }} check
 
     strategy:
       fail-fast: false
@@ -18,7 +18,7 @@ jobs:
 
       - uses: s-u/R-actions/pkg-check@master
         with:
-          linux-deps: libtiff-dev
+          debian-deps: libtiff-dev
           macos-deps: pkgconfig-0.28 xz-5.2.4 jpeg-9 tiff-4.1.0
           check-flags: --as-cran
 
