@@ -20,5 +20,6 @@ jobs:
         with:
           # base toolchain has the compilers and libraries to build
           #      R and recommended packages
+          # full toolchain has also libraries to build CRAN packages
           toolchain-type: base
       - uses: s-u/R-actions/pkg-check@master
