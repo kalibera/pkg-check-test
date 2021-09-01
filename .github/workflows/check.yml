@@ -18,9 +18,8 @@ jobs:
       - uses: kalibera/ucrt3/actions/r-install@main
       - uses: kalibera/ucrt3/actions/toolchain-install@main
         with:
-          # base toolchain has the compilers and libraries to build
-          #      R and recommended packages
-          # full toolchain has also libraries to build CRAN packages
-          # none means no toolchain is needed
+          # base .. toolchain has the compilers and libraries to build R and recommended packages
+          # full .. toolchain has also libraries to build CRAN packages
+          # none .. means no toolchain is needed (the package does not need compilation)
           toolchain-type: base
       - uses: s-u/R-actions/pkg-check@master
