@@ -11,14 +11,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'windows-latest', 'macOS-10.15', 'ubuntu-20.04' ]
+        os: [ 'windows-2022' ]
 
     steps:
       - uses: actions/checkout@v2
-
-      - uses: s-u/R-actions/pkg-check@master
+      - uses: kalibera/ucrt3/actions/r-install@main
+      - uses: kalibera/ucrt3/actions/toolchain-install@main
         with:
-          debian-deps: libtiff-dev
-          macos-deps: pkgconfig-0.28 xz-5.2.4 jpeg-9 tiff-4.1.0
-          check-flags: --as-cran
-
+          toolchain-type: base
+      - uses: s-u/R-actions/pkg-check@master
