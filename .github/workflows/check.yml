@@ -22,5 +22,5 @@ jobs:
           # full ... additional libraries to build CRAN packages
           # none ... no toolchain is needed (no native compilation)
           toolchain-type: base
-    #  - uses: s-u/R-actions/pkg-check@master
-      - uses: kalibera/R-actions/pkg-check@master
+      - uses: s-u/R-actions/pkg-check@master
+    #  - uses: kalibera/R-actions/pkg-check@master
