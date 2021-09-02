@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'windows-2022' ]
+        os: ['windows-2022']
 
     steps:
       - uses: actions/checkout@v2
@@ -23,4 +23,4 @@ jobs:
           # none ... no toolchain is needed (no native compilation)
           toolchain-type: base
       - uses: s-u/R-actions/pkg-check@master
-    #  - uses: kalibera/R-actions/pkg-check@master
+      #  - uses: kalibera/R-actions/pkg-check@master
