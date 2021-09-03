@@ -20,6 +20,6 @@ jobs:
         with:
           # base ... toolchain has the compilers and libraries to build R and recommended packages
           # full ... additional libraries to build CRAN packages
-          # none ... no toolchain is needed
+          # none ... no toolchain is needed (no native code)
           toolchain-type: base
       - uses: kalibera/R-actions/pkg-check@master
