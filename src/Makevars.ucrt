@@ -1,4 +1,5 @@
 PKG_LIBS = -ltiff -ljpeg -lz -lzstd -lwebp -llzma -Wl,--verbose
+PKG_CFLAGS = --verbose
 
 all: clean 
 
