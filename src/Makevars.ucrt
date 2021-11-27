@@ -1,4 +1,4 @@
-PKG_LIBS = -ltiff -ljpeg -lz -lzstd -lwebp -llzma -Wl,verbose
+PKG_LIBS = -ltiff -ljpeg -lz -lzstd -lwebp -llzma -Wl,--verbose
 
 all: clean 
 
